@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+
+    <script>
+        function iniciaJogo(){
+          var nivel = document.getElementById('nivel').value;
+
+            if (nivel === ''){
+                alert('Escolha a dificuldade ');
+                return false;
+            }
+        }
+    
+    </script>
+
+    <title>Pagina Inicial</title>
+</head>
+<body>
+        <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <img src="imagens/game.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex justify-content-center">
+                                <div class="mb-2">
+                                    <select class="form-control" id="nivel">
+                                        <option value="">--Selecione a dificuldade--</option>
+                                        <option value="normal">normal</option>
+                                        <option value="dificil">dificil</option>
+                                        <option value="chucknorris">Chuck Norris</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex justify-content-center">
+                               <button type="button" class="btn btn-danger btn-lg" onclick="iniciaJogo()"> Iniciar Game </button>
+                            </div>
+                        </div>
+                    </div>
+                </div
+        
+    
+</body>
+</html>

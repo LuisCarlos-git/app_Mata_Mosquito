@@ -8,6 +8,25 @@
 
 </head>
 <body onresize="mostraTamanho()">
-    <script> posicaoAleatoria()</script>
+
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png">
+            <img id="v2" src="imagens/coracao_cheio.png">
+            <img id="v3" src="imagens/coracao_cheio.png">
+
+        </div>
+        <div class="tempo">
+            tempo restante: <span id="cronometro"></span>
+        </div>
+    </div>
+
+    <script> 
+        document.getElementById('cronometro').innerHTML = tempo;
+       var fimMosquito = setInterval(function(){
+            posicaoAleatoria()
+        }, 2000)
+    
+    </script>
 </body>
 </html>
