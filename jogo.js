@@ -10,6 +10,21 @@ function mostraTamanho(){
     console.log(altura, largura)
 }
 
+var tempoNivel = 1500;
+
+var nivel = window.location.search;
+nivel = nivel.replace('?', '');//troca um pelo outro
+
+if (nivel === 'normal'){
+    tempoNivel = 1500;
+}else if (nivel === 'dificil'){
+    tempoNivel = 1000;
+}else if (nivel === 'chucknorris'){
+    tempoNivel = 500;
+}
+
+
+
 var cronometro = setInterval(function(){
     tempo -= 1;
 

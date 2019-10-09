@@ -2,6 +2,9 @@ body {
     background: url(imagens/bg.jpg) no-repeat;
     background-size: cover;
 }
+.button{
+    margin-top: 5px;
+}
 .painel{
     background-color: #fff;
     position: absolute;
