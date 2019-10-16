@@ -3,6 +3,8 @@ var largura = 0;
 var vidas = 1;
 var tempo = 10;
 
+
+//mostra o tamanho da tela 
 function mostraTamanho(){
     altura = window.innerHeight;
     largura = window.innerWidth;
